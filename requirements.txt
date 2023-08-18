@@ -1,0 +1,10 @@
+Flask
+numpy
+pandas
+scikit-learn
+tensorflow
+keras
+passlib
+mysql-connector-python
+requests
+streamlit

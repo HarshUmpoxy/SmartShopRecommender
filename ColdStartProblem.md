@@ -3,6 +3,9 @@
 **What is the cold start problem?**
 
 The cold start problem is a challenge faced by recommender systems. It occurs when a recommender system does not have enough information to make recommendations for a new user or item.
+
+We have implemented three system namely books, fashion and electronics which use different algorithms and input (from data collection of users ) to recommend.
+
 There are two main types of cold start problems:
 * User cold start: This occurs when a new user signs up for a service and the recommender system does not have any information about their past behavior.
 * Item cold start: This occurs when a new item is added to a service and the recommender system does not have any information about how other users have rated it.
