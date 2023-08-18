@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Products</title>
+</head>
+<body>
+    <h1>Recommended Products</h1>
+    <ul>
+    {% for product in recommendations %}
+        <li>{{ product }}</li>
+    {% endfor %}
+    </ul>
+    <a href="/electronics">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,2 @@
+This images folder contains all the images of our dataset
+on which our model is trained.

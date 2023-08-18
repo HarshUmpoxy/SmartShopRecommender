@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<title>Flipkart Admin Dashboard</title>
+	<link rel="stylesheet" type="text/css"
+	href="{{ url_for('admin_blueprint.static', filename='admin-style.css') }}">
+	<link rel="stylesheet" type="text/css"
+	href="{{ url_for('admin_blueprint.static', filename='responsive.css') }}">
+</head>
+
+<body>
+
+	<!-- for header part -->
+	<header>
+
+		<div class="logosec">
+			<img src="{{url_for('admin_blueprint.static', filename='Flipkart-Logo.png')}}" style="height: 40px;">
+			<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+				class="icn menuicn"
+				id="menuicn"
+				alt="menu-icon">
+		</div>
+
+		<div class="searchbar">
+			<input type="text"
+				placeholder="Search">
+			<div class="searchbtn">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+					class="icn srchicn"
+					alt="search-icon">
+			</div>
+		</div>
+
+		<div class="message">
+			<div class="circle"></div>
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
+				class="icn"
+				alt="">
+			<div class="dp">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+					class="dpicn"
+					alt="dp">
+			</div>
+		</div>
+
+	</header>
+
+	<div class="main-container">
+		<div class="navcontainer">
+			<nav class="nav">
+				<div class="nav-upper-options">
+					<div class="nav-option option1">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+							class="nav-img"
+							alt="dashboard">
+						<h3><a href="/admin/dashboard">Dashboard</a></h3>
+					</div>
+
+					<div class="option2 nav-option">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+							class="nav-img"
+							alt="articles">
+						<h3> Articles</h3>
+					</div>
+
+					<div class="nav-option option3">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+							class="nav-img"
+							alt="report">
+						<h3><a href="/admin/report_dashboard">Report</a></h3>
+					</div>
+
+					<div class="nav-option option5">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png"
+							class="nav-img"
+							alt="blog">
+						<h3> Profile</h3>
+					</div>
+
+					<div class="nav-option option6">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
+							class="nav-img"
+							alt="settings">
+						<h3> Settings</h3>
+					</div>
+
+					<div class="nav-option logout">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+							class="nav-img"
+							alt="logout">
+						<h3><a href="/admin/logout">Logout</a></h3>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+		<div class="main">
+
+			<div class="searchbar2">
+				<input type="text"
+					name=""
+					id=""
+					placeholder="Search">
+				<div class="searchbtn">
+				<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+						class="icn srchicn"
+						alt="search-button">
+				</div>
+			</div>
+
+            <!-- my user info -->
+            <p>Welcome, {{ session.username }}</p>
+            <h1>Report of Different Models used on Data Records</h1>
+            <!-- my user info end -->
+
+			<div class="box-container">
+				<img src="{{url_for('admin_blueprint.static', filename='users_rating_img.jpg')}}" alt="Graph of User Ratings">
+				<h2>The distribution is skewed to the right. Over 50% of the ratings are 5, followed by a little below 20% with 4 star ratings. And the percentages of ratings keep going down until below 10% of the ratings are 2 stars.</h2>
+			</div>
+
+			<div class="report-container">
+				<div class="report-header">
+					<h1 class="recent-Articles">E-Commerce Electronics Product Recommender</h1>
+					<button class="view">View All</button>
+				</div>
+				<br/>
+				<h2>Evaluation of The Model:</h2>
+				<br/>
+				<p>To evaluate the model's performance, the Root Mean Square Error (RMSE) is calculated. RMSE measures the difference between the predicted and actual ratings, providing insight into the accuracy of the model's predictions.</p>
+				<br/>
+				<h2>Conclusion</h2>
+				<br/>
+				<p>In this report, we implemented Model-based Collaborative Filtering using Singular Value Decomposition to make product recommendations. The decomposition allowed us to capture latent features that drive user preferences. The recommendation function provided personalized suggestions to users based on their predicted preferences. The evaluation through RMSE indicated the model's predictive performance, with a <b>RMSE value of approximately 0.0137</b>, indicating reasonably accurate predictions.
+					<br/><br/>
+					This model shall be refined and integrated with a UI to provide users with personalized product recommendations based on their historical interactions and preferences.</p>
+				<br/>
+				<h2>Recommendation Algorithms Used:</h2>
+				<p><li>Rank Based Model</li>
+				<li>Collaborative Filtering based on User Similarity</li>
+				<li>Model based Collaborative filtering</li></p>
+				
+			</div>
+
+            
+		</div>
+	</div>
+
+	<script src="./static/index.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,6 @@
+uploads folder will be formed.
+
+embeddings.pkl
+filenames.pkl
+
+images - from the dataset download of myntra ( 44k images )

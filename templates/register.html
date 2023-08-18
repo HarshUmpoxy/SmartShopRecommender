@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style-register.css') }}">
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+      <div class="box">
+        <div class="row">
+          <div class="col-sm-5 col-xs-1 box1">
+            <div class="inline-text">
+              <h1>Register</h1>
+              <br/>
+              <p>
+                Welcome to India's Largest<br />
+                E-Commerce Store<br />
+                To get Products <br/>
+                Delivered at Fingertips
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xs-1 box2">
+            <form class="form" method="post" action="/add_user">
+              <div class="user-id user-data">
+                <input type="text " name="uname" id="" required=""/>
+                <label>Enter Name</label>
+              </div>
+              <div class="user-id user-data">
+                  <input type="email " name="uemail" id="" required=""/>
+                  <label>Enter Email</label>
+                </div>
+              <div class="user-id user-data">
+                <input type="password" name="upassword" id="" required=""/>
+                <label>Enter Password</label>
+                
+              </div>
+              <div class="user-id user-data">
+                  <input type="password" name="confirm_password" id="" required=""/>
+                  <label>Confirm Password</label>                
+              </div>
+                <!-- <span><a href="#">Forgot?</span></a> -->
+              <!-- <p>WELCOME TO FLIPKART</p> -->
+                <br/>
+              <div class="user-id button">
+                <input type="submit" name="" id="" value="Register" />
+              </div>
+            </form>
+            <div class="user-id">
+                <p>OR</p>
+            </div>            
+            <div class="user-id">
+              <p class="footer"><a href="/login">Already a Member? Login</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

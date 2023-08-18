@@ -1,0 +1,7 @@
+It would be better to dynamically display the report and stats.
+But time contraints have made it to be implemented after. It 
+will follow similar procedure of generating pkl files necessary
+and just taking the necessary function already implemented in 
+jupyter files here. 
+
+Would integrate this with the same process as used in other places.
