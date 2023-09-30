@@ -1,4 +1,5 @@
 GitHub link: https://github.com/HarshUmpoxy/SmartShopRecommender
+Drive Demo link: https://drive.google.com/drive/folders/1ViHojlfmizjQ2nwZAS-K27mKLEfPhkjB?usp=sharing
 
 # Smart Shop Recommender
 
